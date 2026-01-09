@@ -1,0 +1,154 @@
+
+
+body{
+    background: #272727;
+    font-family: 'Londrina Outline';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 40px #FFD700;
+}
+
+
+/*-------------------TITLE----------------------------*/
+
+.heading{
+    position: absolute;
+    
+    font-family: 'Londrina Solid';
+    width: 389px;
+    height: 79px;
+    left: calc(50% - 389px/2 + 9.5px);
+    top: calc(50% - 79px/2 - 299.5px);
+    font-size: 85px;
+}
+
+
+/*-------------------TIMER----------------------------*/
+
+.box{
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 20px;
+}
+
+#outBox{    
+    width: 652px;
+    height: 242px;
+    left: calc(50% - 712px/2 + 54px);
+    top: calc(50% - 242px/2 - 42px);
+    background-color: #111111;
+    transition: background-color 1s;
+
+    mix-blend-mode: screen;
+    border: 1px solid #687EFF;
+    box-shadow: 0px 4px 40px 10px #687EFF;
+}
+
+#inBox{
+
+    width: 581px;
+    height: 189px;
+    background-color: #111111;
+
+    
+    left: calc(50% - 581px/2);
+    top: calc(50% - 189px/2);
+    border: 1px solid #F42381;
+    box-shadow: 0px 4px 30px 10px rgba(244, 35, 129, 0.25);
+}
+
+#time{
+    
+    position: absolute;
+    width: 388px;
+    height: 112px;
+    left: calc(50% - 388px/2 + 22px);
+    top: calc(50% - 112px/2 - 38px);
+
+    font-size: 85px;
+}
+
+
+/*-------------------Buttons----------------------------*/
+
+.btn{
+
+box-sizing: border-box;
+
+position: absolute;
+width: 199px;
+height: 127px;
+border-radius: 20px;
+background-color: #272727;
+
+font-family: Londrina Outline;
+color: #FFF;
+font-size: 66px;
+}
+
+#green{
+    left: 368px;
+    top: 616px;
+    box-shadow: 0px 4px 20px 10px rgba(0, 168, 0, 0.5);
+}
+
+#green:hover{
+    background: #00A800;
+    width: 199px;
+    height: 127px;
+    flex-shrink: 0;
+    font-family: Londrina Solid;
+    
+}
+
+#yellow{
+    top: 616px;
+    left: 661px;
+    border: 1px solid #F5CE00;
+    box-shadow: 0px 4px 20px 10px rgba(245, 206, 0, 0.50);
+}
+
+#yellow:hover{
+    background: #F5CE00;
+    font-family: Londrina Solid;
+}
+
+.red{
+    top: 616px;
+    left: 954px;
+    border: 1px solid #E50000;
+    box-shadow: 0px 4px 40px 10px rgba(229, 0, 0, 0.50);
+}
+
+.red:hover{
+    background: #E50000;
+    font-family: Londrina Solid;
+}
+
+/*-------------------LAP BOX----------------------------*/
+
+#lapBox{
+    width: 242px;
+    height: 397px;
+    left: calc(50% - 397px/2 + 651.5px);
+    top: calc(50% - 352px/2);
+    font-size: 46px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    scrollbar-color: #272727 #272727;
+    border: 1px solid #FFFFFF;
+}
+
+#lapBox:hover{
+    scrollbar-color: #FFFFFF #272727;
+}
+
+#inner{
+    width: 242px;
+    height: 397px;
+    overflow: auto;
+    scrollbar-gutter: stable;
+}
